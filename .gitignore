@@ -1,12 +1,48 @@
+# Git
+*.rej
+*.orig
+
+# Maven
+target
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Eclipse
+.classpath
+.project
+.settings
+
+#vim
+*.swp
 *.class
 
+#Node.js
+node
+node_modules
+npm-debug.log
+
+#Oxygen
+__MACOSX
+
+#OSX
+.DS_Store
+
 # Mobile Tools for Java (J2ME)
+.gitreview
 .mtj.tmp/
 
+# maven shade
 # Package Files #
 *.jar
 *.war
+dependency-reduced-pom.xml
 *.ear
 
+container/runInfo
+container/var
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
