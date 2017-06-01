@@ -28,8 +28,7 @@ public class MetricConfig {
   @ConfigDef(
       required = true,
       type = ConfigDef.Type.STRING,
-      defaultValue = "Filename",
-      label = "Metric Name",
+      label = "Name",
       description = "Evaluated expression is the metric name.",
       evaluation = ConfigDef.Evaluation.EXPLICIT,
       elDefs = RecordEL.class,
@@ -41,8 +40,7 @@ public class MetricConfig {
   @ConfigDef(
       required = true,
       type = ConfigDef.Type.STRING,
-      defaultValue = "${str:regExCapture(record:id(), '(.+)::(.+)', 1)}",
-      label = "Metric Name",
+      label = "Expression",
       description = "Boolean expression determines whether metric is incremented.",
       evaluation = ConfigDef.Evaluation.EXPLICIT,
       elDefs = RecordEL.class,
@@ -55,7 +53,7 @@ public class MetricConfig {
       required = true,
       type = ConfigDef.Type.MODEL,
       defaultValue = "METER",
-      label = "Metric Type",
+      label = "Type",
       displayPosition = 20,
       group = "#0"
   )

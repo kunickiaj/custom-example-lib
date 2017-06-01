@@ -31,7 +31,7 @@ import com.streamsets.pipeline.api.StageDef;
     description = "Adds Custom Metrics",
     icon = "meter.png",
     producesEvents = true,
-    onlineHelpRefUrl = ""
+    onlineHelpRefUrl = "#"
 )
 @ConfigGroups(Groups.class)
 @GenerateResourceBundle
